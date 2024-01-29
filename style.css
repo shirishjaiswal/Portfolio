@@ -1,0 +1,274 @@
+body {
+    margin: 0%;
+    background: linear-gradient(45deg, #a7d7c5, #8da7d7);
+}
+
+header {
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    position: absolute;
+    top: 0%;
+    width: 100%;
+    background-color: #155e63;
+    color: #fff;
+    padding: 10px 0;
+}
+
+nav {
+    display: flex;
+}
+
+.menu-icon {
+    display: none;
+    cursor: pointer;
+}
+
+.nav-bar {
+    text-align: center;
+    display: inline;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+    background-color: #2d666ade;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.nav-bar:hover {
+    color: #2d666ade;
+    background-color: #b7f4f8;
+    border-color: #2d666ade;
+    border-radius: 5px;
+}
+.mobile {
+    display: none;
+}
+#about {
+    display: flex;
+    align-items: center;
+}
+
+.button-link,
+.github,
+.live-link,
+.linkedin,
+.gmail {
+    font-weight: bold;
+    color: #01383c;
+    text-align: center;
+    display: inline-block;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    border: solid;
+    border-color: #ffffff00;
+    background-color: #03939d7d;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.github,
+.linkedin,
+.gmail {
+    background-size: contain;
+    background-position: center;
+    height: 20px;
+    background-repeat: no-repeat;
+}
+
+.button-link:hover,
+.github:hover,
+.live-link:hover,
+.linkedin:hover,
+.gmail:hover {
+    border: 1px;
+    border-color: #000000;
+    border-style: solid;
+    border-radius: 5px;
+}
+
+#profile {
+    max-width: 200px;
+    margin-right: 20px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+#profile img {
+    width: 100%;
+    height: auto;
+    opacity: 0.7;
+}
+
+#about-text {
+    flex: 1;
+}
+
+section {
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.4);
+    padding: 20px;
+    margin: 20px;
+    display: block;
+}
+
+h2 {
+    text-align: center;
+    font-size: 24px;
+    color: #155e63;
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.row {
+    flex-wrap: wrap;
+    gap: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.card {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 80%;
+    padding: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    background-color: #fff;
+}
+
+.card-heading {
+    font-weight: bold;
+}
+
+.card-content {
+    margin-top: 10px;
+}
+
+.skl {
+    width: 20%;
+}
+
+.hummingbird {
+    content: " ";
+    background-image: url(https://eadn-wc05-6928584.nxedge.io/wp-content/uploads/2023/08/hbwsl-logo-1-1.png);
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-size: 18%;
+}
+
+.education-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.education-table th,
+.education-table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.education-table th {
+    background-color: #51a5aba0;
+    color: #2d666a;
+}
+
+.education-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.education-table tr:hover {
+    background-color: #ddd;
+}
+
+#achievements .card {
+    min-width: 30%;
+}
+
+.contact p {
+    margin: 2%;
+}
+/* Media Query for Mobile View */
+@media screen and (max-width: 600px) {
+    section {
+        display: flow;
+    }
+
+    .card {
+        width: 100%;
+    }
+
+    section {
+        background-color: #ffffff;
+        border-radius: 15px;
+        box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.4);
+        padding: 15px;
+        margin: 15px;
+        display: block;
+    }
+
+    section {
+        display: block;
+    }
+
+    header nav {
+        display: none;
+    }
+
+    .menu-icon {
+        display: flex;
+    }
+
+    .mobile {
+        position: absolute;
+        display: flex;
+        justify-content: space-around;
+        padding-left: 8%;
+        margin-top: 18%;
+    }
+    header {
+        padding: 15px 0;
+    }
+
+    .nav-bar,
+    .button-link,
+    .live-link {
+        padding: 8px 15px;
+    }
+
+    .github,
+    .linkedin,
+    .gmail {
+        all: unset;
+    }
+    #profile {
+        max-width: 150px;
+    }
+
+    section {
+        padding: 15px;
+        margin: 10px;
+    }
+
+    section h2 {
+        font-size: 20px;
+    }
+
+    .education-table th,
+    .education-table td {
+        padding: 8px;
+        font-size: 12px;
+    }
+
+    #contact .row {
+        all : unset;
+    }
+}
